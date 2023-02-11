@@ -27,7 +27,7 @@ let game = {
             if ( !(i in visited) ){
                 path.push(i);
             }
-        }let rand_pos = Math.floor(Math.random() * path.length);
+        }let rand_pos = path[Math.floor(Math.random() * path.length)];
         food = [parseInt(rand_pos/columns),  rand_pos % columns];
     },
     // Short function for checking direction
